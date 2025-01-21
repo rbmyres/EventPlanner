@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Event</title>
+    <link rel="stylesheet" href="css/manageEvent.css">
+    <script defer src="js/manageEvent.js"></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href = "home.html">Events</a></li>
+                <li><a href = "myEvents.html">My Events</a></li>
+                <li><a href = "planEvent.html">Plan Event</a></li>
+                <li class="profile"><a href = "profile.html">Profile</a></li>
+            </ul>
+        </nav>
+
+        <div class="manageBox">
+
+            <div class="mini-navbar">
+                <ul>
+                    <li id="editEvent">Edit Event</li>
+                    <li id="viewAttendees">View Attendees</li>
+                    <li id="viewWorkers">View Workers</li>
+                    <li id="sendMessage">Send Message</li>
+                </ul>
+            </div>
+
+            <div id="boxContent" class="boxContent">
+
+                <div id="editContent">
+                    <h2>Edit Event</h2>
+                    <form action="#" method="post">
+                        <!-- Event Name -->
+                        <div class="form-group">
+                            <label for="eventName">Event Name</label>
+                            <input type="text" id="eventName" name="eventName" required>
+                        </div>
+
+                        <!-- Event Date and Time -->
+                        <div class="form-group">
+                            <label for="eventDate">Event Date</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventTime">Event Time</label>
+                            <input type="time" id="eventTime" name="eventTime" required>
+                        </div>
+
+                        <!-- Event Location -->
+                        <div class="form-group">
+                            <label for="eventLocation">Event Location</label>
+                            <input type="text" id="eventLocation" name="eventLocation" required>
+                        </div>
+
+                        <!-- Event Description -->
+                        <div class="form-group">
+                            <label for="eventDescription">Event Description</label>
+                            <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group-button">
+                            <button type="submit">Submit Changes</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="attendeeContent" hidden>
+                    <h2>Attendees</h2>
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>User Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Charles Thomas</td>
+                                <td>cthomas@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Marisa Vince</td>
+                                <td>marvince@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Anthony March</td>
+                                <td>tonymarch@yahoo.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="workerContent" hidden>
+                    <h2>Workers</h2>
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>User Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Charles Thomas</td>
+                                <td>cthomas@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Marisa Vince</td>
+                                <td>marvince@hotmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Anthony March</td>
+                                <td>tonymarch@yahoo.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="messageContent" hidden>
+                    <h2>Send Message</h2>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="typeMessage">Type Message</label>
+                            <textarea id="typeMessage" name="typeMessage" rows="4" required></textarea>
+                        </div>
+                        <div class="bottomPortion">
+                            <div class="attendeeCheckBox">
+                                <input type="checkbox" name="attendees" id="attendeesBox">Attendees
+                            </div>
+                            <div class="workerCheckBox">
+                                <input type="checkbox" name="workers" id="workersBox">Workers    
+                            </div>
+                            <div class="messageButton">
+                                <button id="sendMessageButton" class="sendMessageButton">Send Message</button>
+                            </div>
+                        </div>
+                        
+
+                        
+                    </form>
+
+
+                
+                </div>
+
+            </div>
+                
+        </div>
+
+    </body>
+</html>

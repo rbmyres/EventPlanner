@@ -1,0 +1,240 @@
+/* Styling for base html */
+html{
+    background: rgb(160, 157, 157);
+}
+
+body{
+    margin:0px
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for navbar */
+ul{
+    color: #14213D;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #14213D;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    margin-bottom: 2em;   
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #506186;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.profile{
+    float: right;
+} 
+
+/* Styling for main conatiner */
+.manageBox{
+    margin: auto auto 1em auto;
+    max-width: 900px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #14213D;
+}
+
+/* Styling for second/mini navbar */
+.mini-navbar ul{
+    list-style-type: none;
+    background-color: #14213D;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.mini-navbar li{
+    color: #fff;
+    display: inline-block;
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+    width: 18%;
+}
+
+.mini-navbar li:hover{
+    background-color: #506186;
+    cursor: pointer;
+}
+
+/* Styling for Plan Event */
+.event-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    border: 3px solid #14213D;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #14213D;
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    color: #14213D;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.form-group{
+    margin: 0 2.8em 1em 1em;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: .8em 10px .8em 10px;
+    border: 1px solid #14213D;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+.form-group-button{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.form-group-button button {
+    width: 80%;
+    padding: 0.8em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #14213D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group-button button:hover {
+    background-color: #506186;
+}
+
+/* Styling for User Table */
+h1{
+    text-align: center;
+}
+.user-table {
+    width: 100%;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+.user-table thead {
+    background-color: #14213D;
+    color: #fff;
+}
+
+.user-table th, .user-table td {
+    padding: 1em;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.user-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.user-table td {
+    color: #333;
+}
+
+/* Styling for Send Message */
+
+.sendMessageButton{
+    margin: 30px 0px 10px 30px;
+    background-color: #14213D;
+    color: #fff;
+    border: 1px solid #14213D;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    width: 70%;
+    float: right;
+    margin: 0 40px 20px 0;
+    height: 3em;
+    transition: .6s ease;
+
+}
+
+.sendMessageButton:hover{
+    background-color: #506186;
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: .4s ease;
+}
+
+.bottomPortion{
+    display: grid;
+    height: min-content;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    height: 90px;
+}
+
+.attendeeCheckBox{
+    grid-column: 1 / 1;
+    margin-left: 30px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #14213D;
+}
+
+.workerCheckBox{
+    grid-column: 1 / 1;
+    margin-left: 30px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    color: #14213D;
+}
+
+.messageButton{
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
+}
