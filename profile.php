@@ -20,7 +20,7 @@
         //$_SESSION['messages'] = $messages; // stores the messages in the session
 
     } else {
-        header("Location: login.php");
+        header("Location: index.php");
         exit;
     }
 
@@ -76,7 +76,7 @@
                             session_start(); // starts the session to access user information
 
                             if(!isset($_SESSION['user'])){
-                                header("Location: login.php");
+                                header("Location: index.php");
                                 exit();
                             }
 
