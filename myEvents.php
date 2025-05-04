@@ -20,7 +20,8 @@
         FROM Activity 
         INNER JOIN Building ON Activity.Building_ID = Building.Building_ID
         INNER JOIN Room ON Room.Room_ID = Activity.Room_ID
-        INNER JOIN User ON Activity.Manager_ID = User.User_ID  WHERE Activity.Denied = 0;");
+        INNER JOIN User ON Activity.Manager_ID = User.User_ID  WHERE Activity.Denied = 0
+        ORDER BY Activity.Date ASC, Activity.Start_Time ASC");
     $stmt->execute();
     $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
